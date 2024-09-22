@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Cosmetics Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Cosmetics</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#sustainability">Sustainability</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+     <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h1>Welcome to Cosmetics</h1>
+            <p>Your guide to safe and effective skincare products.</p>
+            <button id="learn-more-btn">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Recommendation Modal -->
+    <div id="recommendation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Recommended Products</h2>
+            <div id="recommendation-list"></div>
+        </div>
+    </div>
+
+ <section id="about">
+    <h2>Our Mission</h2>
+    <div class="about-container">
+        <img src="mission.jpg" alt="Skincare Image" class="about-image">
+        <div class="about-text box">
+            <h3>Our Mission</h3>
+            <p>We strive to reduce harm in skincare by advocating for ingredient safety and ethical practices. Our goal is to provide products that not only enhance beauty but also protect the planet.</p>
+        </div>
+    </div>
+
+    <h2 >Our Values</h2>
+    <div class="about-container">
+        <img src="values.jpg" alt="Values Image" class="about-image">
+        <div class="about-text box">
+            <p><strong>Ingredient Safety:</strong> We prioritize safe and non-toxic ingredients.</p>
+            <p><strong>Sustainability:</strong> Committed to eco-friendly practices and packaging.</p>
+            <p><strong>Ethical Practices:</strong> Supporting fair trade and cruelty-free products.</p>
+        </div>
+    </div>
+</section>
+</section>
+
+
+	<section id="skincare-tips" class="animate-section about-section">
+        <h2>Skincare Tips</h2>
+        <p>Explore tailored skincare routines for different skin types.</p>
+        <img src="about-bg.jpg" alt="Tips Background" class="section-bg-img">
+    </section>
+	
+
+    <section id="products" class="animate-section products-section">
+        <h2>Product Recommendations</h2>
+        <p>Discover our curated list of safe and effective skincare products tailored to your needs.</p>
+        
+        <!-- Filter Buttons -->
+		<div class="filter-btns">
+			<button class="filter-btn" data-category="all">All</button>
+			<button class="filter-btn" data-category="sensitive">Sensitive Skin</button>
+			<button class="filter-btn" data-category="dry">Dry Skin</button>
+			<button class="filter-btn" data-category="oily">Oily Skin</button>
+			<button class="filter-btn" data-category="aging">Anti-Aging</button>
+		</div>
+
+
+        <!-- Product Cards -->
+        <div class="product-grid">
+            <div class="product-card" data-category="sensitive">
+                <img src="product1.avif" alt="Calming Moisturizer">
+                <h3>Calming Moisturizer</h3>
+                <p>Perfect for sensitive skin, free of harsh chemicals.</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            
+            <div class="product-card" data-category="dry">
+                <img src="product2.avif" alt="Hydrating Serum">
+                <h3>Hydrating Serum</h3>
+                <p>Deep hydration for dry, flaky skin.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="product-card" data-category="oily">
+                <img src="product3.avif" alt="Oil-Free Cleanser">
+                <h3>Oil-Free Cleanser</h3>
+                <p>Gentle and effective for oily and acne-prone skin.</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+
+            <div class="product-card" data-category="aging">
+                <img src="product4.avif" alt="Anti-Aging Cream">
+                <h3>Anti-Aging Cream</h3>
+                <p>Reduces the appearance of fine lines and wrinkles.</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustainability">
+    <div class="sustainability-header">
+        <h2>Sustainability: Eco-Friendly Practices & Cruelty-Free Products</h2>
+        <p>Discover how sustainable skincare is better for you and the planet.</p>
+    </div>
+
+    <div class="sustainability-content">
+        <!-- Section 1: Eco-Friendly Practices -->
+        <div class="sustainability-box eco-practices">
+            <i class="fas fa-leaf sustainability-icon"></i>
+            <h3>Eco-Friendly Practices & Packaging</h3>
+            <p>
+                Sustainable skincare brands use ethically sourced, organic, and biodegradable ingredients to reduce environmental impact. Packaging is made from recyclable materials like glass, aluminum, or cardboard, cutting down on plastic use.
+            </p>
+            <p>
+                These brands promote sustainable routines with biodegradable packaging, ensuring less waste and pollution.
+            </p>
+        </div>
+
+        <!-- Section 2: Cruelty-Free Products -->
+        <div class="sustainability-box cruelty-free">
+            <i class="fas fa-paw sustainability-icon"></i>
+            <h3>Cruelty-Free Products</h3>
+            <p>
+                Cruelty-free practices go hand-in-hand with eco-conscious efforts. Brands committed to sustainability ensure their products are not tested on animals, advocating for a compassionate, ethical industry.
+            </p>
+        </div>
+
+        <!-- Section 3: Why It Matters -->
+        <div class="sustainability-box why-matters">
+            <i class="fas fa-globe sustainability-icon"></i>
+            <h3>Why Sustainable Skincare Matters</h3>
+            <p>
+                Sustainable skincare is great for sensitive or allergy-prone skin due to its gentler, natural ingredients. It's also environmentally friendly: plant-based, biodegradable ingredients break down quickly, reducing pollution when rinsed down the drain.
+            </p>
+            <p>
+                Unlike conventional products that contain harmful chemicals, sustainable brands reduce water contamination and protect ecosystems.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-info">
+	<h2>Are you looking for personalized skincare recommendations?</h2>
+    <p>While we don't offer direct consultations, here are some ways you can get in touch with experts:</p>
+		<ul>
+			<li>Consult a Dermatologist for tailored advice.</li>
+			<li>Visit a Skincare Clinic for assessments.</li>
+			<li>Explore Professional Blogs for insights.</li>
+		</ul>
+	</div>
+        <h2 style="text-align: center;">Contact Us</h2>
+		<div style="text-align: center;">
+			<a href="https://www.instagram.com" target="_blank" class="social-icon">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="https://www.facebook.com" target="_blank" class="social-icon">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a href="https://twitter.com" target="_blank" class="social-icon">
+				<i class="fab fa-twitter"></i>
+			</a>
+		</div>
+		<h4>Other Resources:</h4>
+			<ul class="resource-list">
+			<li><a href="https://www.dailymotion.com/video/x7ntwrd" target="_blank">Doc Willie Ong Skincare Tips</a></li>
+			<li><a href="https://www.projectvanity.com/projectvanity/when-less-is-more-in-skin-care-going-on-a-skincare-diet-with-olay?rq=olay" target="_blank">Kimberly Anne Capeding</a></li>
+			<li><a href="https://dmdskinsciences.com/pages/dmd-glow-program" target="_blank">DMD Online Consultation</a></li>
+			<li><a href="https://axiologybeauty.com/" target="_blank">Axiology</a></li>
+			<li><a href="https://www.rmsbeauty.com/" target="_blank">RMS Beauty</a></li>
+			<li><a href="https://juicebeauty.com/" target="_blank">Juice Beauty</a></li>
+		</ul>
+	</div>
+	<div class="meet-members">
+    <a href="members.html">Meet the Members</a>
+</div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
