@@ -202,86 +202,51 @@ section {
     }
 }
 
-/* Product Grid and Styling */
-.product-grid {
+/* Routine Container Styling */
+.routine-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
     margin-top: 20px;
+    padding: 10px;
 }
 
-.product-card {
+.routine-card {
     background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
     animation: fadeInCard 1s ease-out;
 }
 
-.product-card:hover {
+.routine-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.product-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.product-card h3 {
+.routine-card h4 {
     margin: 15px 0 10px;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: #333;
 }
 
-.product-card p {
+.routine-card p {
     color: #666;
     margin-bottom: 10px;
 }
 
-.stars {
+.routine-rating {
     color: gold;
     font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-/* Filter Buttons */
-.filter-btns {
-    margin-bottom: 20px;
-}
-
-.filter-btns button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.filter-btns button:hover {
-    background-color: #555;
-}
-
-.filter-btns button.active {
-    background-color: #999;
-}
-
-/* Card Fade-in Animation */
-@keyframes fadeInCard {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.routine-type {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
 }
 
 /* Section Background Colors */
@@ -379,8 +344,8 @@ section {
 }
 
 .tip-box img {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 300px;
     border-radius: 10px; /* Round the image edges */
     margin-bottom: 15px;
 }
@@ -408,8 +373,133 @@ section {
     }
 }
 
-#products {
-    background-color: #64b5f6; /* Vibrant Blue */
+.product-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.25rem;
+    color: #0056b3; /* Product name color */
+    text-align: center; /* Center product name */
+}
+
+.product-card p {
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center; /* Center product description */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Colored Stars */
+.stars {
+    color: gold;
+    font-size: 1.5rem; /* Increase star size */
+    text-align: center; /* Center stars */
+}
+
+/* Colored Filter Buttons */
+.filter-btns button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btns button:hover {
+    background-color: #ff9800; /* Change hover color */
+}
+
+.filter-btns button.active {
+    background-color: #f44336; /* Active button color */
+}
+
+/* Card Fade-in Animation */
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* General Text and Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+}
+
+/* Product Grid and Styling */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInCard 1s ease-out;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInCard 1s ease-out;
+    overflow: hidden; /* Prevent overflow of content */
+}
+
+.product-card img {
+    width: 90px; /* Ensure image takes full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Set a maximum height for the image */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .product-card img {
+        max-height: 120px; /* Adjust max height for smaller screens */
+    }
+}
+
+/* Card Fade-in Animation */
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Sustainability Section */
@@ -612,7 +702,7 @@ section {
 .meet-members {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #4CAF50; /* Change to your desired color */
     color: white;
     text-decoration: none;
@@ -622,22 +712,22 @@ section {
 
 .meet-members {
     text-align: center;
-    margin: 20px 0; /* Add some space above and below */
+    margin: 15px 0; /* Add some space above and below */
 }
 
 .meet-members a {
     display: inline-block; /* Allows padding and margin */
-    padding: 10px 20px; /* Space around the text */
+    padding: 5px 15px; /* Space around the text */
     font-size: 18px; /* Font size */
     color: white; /* Text color */
     background-color: #4CAF50; /* Background color */
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 3px; /* Rounded corners */
     text-decoration: none; /* Remove underline */
     transition: background-color 0.3s, transform 0.3s; /* Animation on hover */
 }
 
 .meet-members a:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #e5f0e4; /* Darker green on hover */
     transform: scale(1.05); /* Slight zoom effect */
 }
 /* Responsive Design */

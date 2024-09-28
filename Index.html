@@ -15,7 +15,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#tips">Tips</a></li>
+                <li><a href="#tips-section">Tips</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#sustainability">Sustainability</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -68,13 +68,13 @@
 </section>
 </section>
 
-<section class="skincare-tips">
+<section id="tips-section" class="skincare-tips">
     <h1>Skincare Tips for Different Skin Types</h1>
     <div class="tips-grid">
         <!-- Sensitive Skin -->
         <div class="tip-box">
             <h2>Sensitive Skin</h2>
-            <img src="sensitive_skin.jpg" alt="Sensitive Skin Tips">
+            <img src="sensitiveskin.jpeg" alt="Sensitive Skin Tips">
             <p>Sensitive skin is when you have a bad reaction to cosmetic products. Here’s the routine:</p>
             <ul>
                 <li>Morning: Cleanser, Toner, Antioxidant Serum, Hydrating Serum, Eye Cream, Moisturizer, Sunscreen</li>
@@ -84,7 +84,7 @@
         <!-- Normal Skin -->
         <div class="tip-box">
             <h2>Normal Skin</h2>
-            <img src="normal_skin.jpg" alt="Normal Skin Tips">
+            <img src="normalskin.jpg" alt="Normal Skin Tips">
             <p>Normal skin may come down to genetics. Here's your skincare routine:</p>
             <ul>
                 <li>Morning: Cleanser, Toner, Antioxidant Serum, Hydrating Serum, Eye Cream, Moisturizer, Sunscreen</li>
@@ -94,7 +94,7 @@
         <!-- Combination Skin -->
         <div class="tip-box">
             <h2>Combination Skin</h2>
-            <img src="combination_skin.jpg" alt="Combination Skin Tips">
+            <img src="combinationskin.jpg" alt="Combination Skin Tips">
             <p>Combination skin is when you have both oily and dry areas. Try this routine:</p>
             <ul>
                 <li>Morning: Balanced Cleanser, Toner, Antioxidant Serum, Hydrating Serum, Eye Cream, Oil-Free Moisturizer, Sunscreen</li>
@@ -104,7 +104,7 @@
         <!-- Oily Skin -->
         <div class="tip-box">
             <h2>Oily Skin</h2>
-            <img src="oily_skin.jpg" alt="Oily Skin Tips">
+            <img src="oilyskin.jpg" alt="Oily Skin Tips">
             <p>Oily skin is common and presents unique challenges. Follow this regimen:</p>
             <ul>
                 <li>Morning: Foaming Cleanser, Toner, Antioxidant Serum, Lightweight Hydrating Serum, Eye Cream, Oil-Free Moisturizer, Sunscreen</li>
@@ -114,51 +114,103 @@
     </div>
 </section>
 
-    <section id="products" class="animate-section products-section">
-        <h2>Product Recommendations</h2>
-        <p>Discover our curated list of safe and effective skincare products tailored to your needs.</p>
-        
-        <!-- Filter Buttons -->
-		<div class="filter-btns">
-			<button class="filter-btn" data-category="all">All</button>
-			<button class="filter-btn" data-category="sensitive">Sensitive Skin</button>
-			<button class="filter-btn" data-category="dry">Dry Skin</button>
-			<button class="filter-btn" data-category="oily">Oily Skin</button>
-			<button class="filter-btn" data-category="aging">Anti-Aging</button>
-		</div>
+<section id="products" class="animate-section products-section">
+    <h2>Product Recommendations</h2>
+    <p>Discover our curated list of safe and effective skincare products tailored to your needs.</p>
 
+    <!-- Filter Buttons -->
+    <div class="filter-btns">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="sensitive">Sensitive Skin</button>
+        <button class="filter-btn" data-category="normal">Normal Skin</button>
+        <button class="filter-btn" data-category="combination">Combination Skin</button>
+        <button class="filter-btn" data-category="oily">Oily Skin</button>
+    </div>
+    <!-- Product Cards -->
+    <div class="product-grid">
+        <!-- Example of Detailed Routine for Sensitive Skin -->
+        <div class="product-card routine-card" data-category="sensitive">
+            <h3>Sensitive Skin - Morning Routine</h3>
 
-        <!-- Product Cards -->
-        <div class="product-grid">
-            <div class="product-card" data-category="sensitive">
-                <img src="product1.avif" alt="Calming Moisturizer">
-                <h3>Calming Moisturizer</h3>
-                <p>Perfect for sensitive skin, free of harsh chemicals.</p>
-                <div class="stars">★★★★☆</div>
-            </div>
+            <h4>Cleanser</h4>
+            <img src="MCOS.jpg" alt="Oily Skin Tips">
+            <p>Cetaphil Gentle Skin Cleanser</p>
+            <p class="routine-rating">★★★★☆ (4.5/5)</p>
+
+            <h4>Toner/Mist</h4>
+            <img src="TMMS.jpg" alt="Oily Skin Tips">
+            <p>Fresh Skinlab Tomato Glass Skin Hydrating Mist</p>
+            <p class="routine-rating">★★★★☆ (4.4/5)</p>
+
+            <h4>Antioxidant Serum</h4>
+            <img src="ASMS.jpg" alt="Oily Skin Tips">
+            <p>Human Nature Sunflower Beauty Oil</p>
+            <p class="routine-rating">★★★★☆ (4.5/5)</p>
+
+            <h4>Moisturizer</h4>
+            <img src="CMCMS.jpg" alt="Oily Skin Tips">
+            <p>CeraVe Moisturizing Cream</p>
+            <p class="routine-rating">★★★★★ (4.8/5)</p>
+
+            <h4>Sunscreen</h4>
+            <img src="ARMS.jpg" alt="Oily Skin Tips">
+            <p>Biore UV Aqua Rich Watery Essence SPF 50+</p>
+            <p class="routine-rating">★★★★★ (4.7/5)</p>
+
+            <h3 class="routine-type">Sensitive Skin - Night Routine</h4>
+
+            <h4>Water-Based Cleanser</h4>
+            <img src="BNS.webp" alt="Oily Skin Tips">
+            <p>Banila Co Clean It Zero Cleansing Balm</p>
+            <p class="routine-rating">★★★★☆ (4.6/5)</p>
             
-            <div class="product-card" data-category="dry">
-                <img src="product2.avif" alt="Hydrating Serum">
-                <h3>Hydrating Serum</h3>
-                <p>Deep hydration for dry, flaky skin.</p>
-                <div class="stars">★★★★★</div>
-            </div>
+            <h4>Toner/Mist</h4>
+            <img src="TNS.jpg" alt="Oily Skin Tips">
+            <p>Thayers Alcohol-Free Witch Hazel Toner</p>
+            <p class="routine-rating">★★★★☆ (4.4/5)</p>
 
-            <div class="product-card" data-category="oily">
-                <img src="product3.avif" alt="Oil-Free Cleanser">
-                <h3>Oil-Free Cleanser</h3>
-                <p>Gentle and effective for oily and acne-prone skin.</p>
-                <div class="stars">★★★★☆</div>
-            </div>
+            <h4>Targeted Night Serum</h4>
+            <img src="ONS.jpeg" alt="Oily Skin Tips">
+            <p>The Ordinary Niacinamide 10% + Zinc 1%</p>
+            <p class="routine-rating">★★★★☆ (4.5/5)</p>
 
-            <div class="product-card" data-category="aging">
-                <img src="product4.avif" alt="Anti-Aging Cream">
-                <h3>Anti-Aging Cream</h3>
-                <p>Reduces the appearance of fine lines and wrinkles.</p>
-                <div class="stars">★★★★☆</div>
-            </div>
+            <h4>Eye Cream</h4>
+            <img src="ENS.jpeg" alt="Oily Skin Tips">
+            <p>Olay Eyes Brightening Eye Cream</p>
+            <p class="routine-rating">★★★★☆ (4.3/5)</p>
+
+            <h4>Moisturizer</h4>
+            <img src="ACNS.jpg" alt="Oily Skin Tips">
+            <p>Aveeno Calm + Restore Nourishing Gel Cream </p>
+            <p class="routine-rating"★★★★☆ (4.5/5)</p>
         </div>
-    </section>
+
+        <!-- Repeat for Normal Skin, Combination Skin, Oily Skin -->
+        <div class="product-card routine-card" data-category="normal">
+            <h3>Normal Skin - Morning Routine</h3>
+            <h4>Cleanser</h4>
+            <p>Human Nature Gentle Cleansing Foam</p>
+            <p class="routine-rating">★★★★☆ (4.5/5)</p>
+            <!-- Continue routine details for Normal Skin -->
+        </div>
+
+        <div class="product-card routine-card" data-category="combination">
+            <h3>Combination Skin - Morning Routine</h3>
+            <h4>Cleanser</h4>
+            <p>Low pH Good Morning Gel Cleanser</p>
+            <p class="routine-rating">★★★★★ (4.7/5)</p>
+            <!-- Continue routine details for Combination Skin -->
+        </div>
+
+        <div class="product-card routine-card" data-category="oily">
+            <h3>Oily Skin - Morning Routine</h3>
+            <h4>Cleanser</h4>
+            <p>Low pH Good Morning Gel Cleanser</p>
+            <p class="routine-rating">★★★★★ (4.7/5)</p>
+            <!-- Continue routine details for Oily Skin -->
+        </div>
+    </div>
+</section>
 
     <section id="sustainability">
     <div class="sustainability-header">
